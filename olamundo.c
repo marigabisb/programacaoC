@@ -1,38 +1,27 @@
     #include <stdio.h>
 
     int main(){
-        /*
-        Soma (+)
-        Subtracao (-)
-        Multiplicacao (*)
-        Divisao (/)
-        */
 
-    int numero1, numero2;
-    int soma, subtracao, multiplicacao, divisao;
+        int nota1, nota2, nota3;
+        float media;
 
-      printf ("Entre com o numero 1: \n");
-      scanf ("%d", &numero1);
-      printf ("Entre com o numero 2: \n");
-      scanf ("%d", &numero2);
+        printf ("*** Programa de Cálculo da Média ***\n");
+        
+        printf ("Digite a sua primeira nota: \n");
+        scanf ("%d", &nota1);
 
-      // operacao soma
-    soma = numero1 + numero2;
+        printf ("Digite a sua segunda nota: \n");
+        scanf ("%d", &nota2);
 
-      // operacao subtracao
-    subtracao = numero1 - numero2;
+        printf ("Digite a sua terceira nota: \n");
+        scanf ("%d", &nota3);
 
-      // operacao multiplicacao
-    multiplicacao = numero1 * numero2;
+        media = (float)(nota1 + nota2 + nota3) / 3;
 
-      // operacao divisao
-    divisao = numero1 / numero2;
+        printf ("A média é: %.1f", media);
 
-     printf("A Soma é: %d\n", soma);
-     printf("A Subtração é: %d\n", subtracao);
-     printf("A Multiplicação é: %d\n", multiplicacao);
-     printf("A Divisão é: %d\n", divisao);
 
+    return 0;
 
 
 
